@@ -25,7 +25,7 @@ let interval = setInterval(collectRSSIs, scanInterval * 1000);
 //		- for each unique beacon, get all rssi's received
 //		- average rssi's for each beacon
 //		- empty advertisements[]
-const collectRSSIs = () => {
+function collectRSSIs() {
 	// shoud return list of UUIDs
 	uniq_beacons = _.find(_.countBy(advertisements, (advertisements) => {return advertisements.iBeacon.UUID})); // should return list of UUIDs received
 	beacons = _.filter(advertisements, () => {
