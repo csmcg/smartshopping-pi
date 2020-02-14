@@ -1,0 +1,24 @@
+{
+  "name": "smartshopping-pi",
+  "version": "1.0.0",
+  "description": "client to ee499 smartshopping",
+  "main": "scan.js",
+  "dependencies": {
+    "lodash": "^4.17.15",
+    "node-beacon-scanner": "^0.2.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/csmcg/smartshopping-pi.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/csmcg/smartshopping-pi/issues"
+  },
+  "homepage": "https://github.com/csmcg/smartshopping-pi#readme"
+}
