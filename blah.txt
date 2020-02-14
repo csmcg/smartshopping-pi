@@ -1,0 +1,758 @@
+Started scan
+{
+ "id": "76af47015460",
+ "address": "76:af:47:01:54:60",
+ "localName": null,
+ "txPowerLevel": null,
+ "rssi": -58,
+ "beaconType": "iBeacon",
+ "iBeacon": {
+  "uuid": "73B83A72-E3FF-49EA-B670-F10792A9E3E2",
+  "major": 0,
+  "minor": 0,
+  "txPower": 0
+ }
+}
+{
+ "id": "76af47015460",
+ "address": "76:af:47:01:54:60",
+ "localName": null,
+ "txPowerLevel": null,
+ "rssi": -58,
+ "beaconType": "iBeacon",
+ "iBeacon": {
+  "uuid": "73B83A72-E3FF-49EA-B670-F10792A9E3E2",
+  "major": 0,
+  "minor": 0,
+  "txPower": 0
+ }
+}
+{
+ "id": "76af47015460",
+ "address": "76:af:47:01:54:60",
+ "localName": null,
+ "txPowerLevel": null,
+ "rssi": -58,
+ "beaconType": "iBeacon",
+ "iBeacon": {
+  "uuid": "73B83A72-E3FF-49EA-B670-F10792A9E3E2",
+  "major": 0,
+  "minor": 0,
+  "txPower": 0
+ }
+}
+{
+ "id": "76af47015460",
+ "address": "76:af:47:01:54:60",
+ "localName": null,
+ "txPowerLevel": null,
+ "rssi": -58,
+ "beaconType": "iBeacon",
+ "iBeacon": {
+  "uuid": "73B83A72-E3FF-49EA-B670-F10792A9E3E2",
+  "major": 0,
+  "minor": 0,
+  "txPower": 0
+ }
+}
+{
+ "id": "76af47015460",
+ "address": "76:af:47:01:54:60",
+ "localName": null,
+ "txPowerLevel": null,
+ "rssi": -54,
+ "beaconType": "iBeacon",
+ "iBeacon": {
+  "uuid": "73B83A72-E3FF-49EA-B670-F10792A9E3E2",
+  "major": 0,
+  "minor": 0,
+  "txPower": 0
+ }
+}
+{
+ "id": "76af47015460",
+ "address": "76:af:47:01:54:60",
+ "localName": null,
+ "txPowerLevel": null,
+ "rssi": -54,
+ "beaconType": "iBeacon",
+ "iBeacon": {
+  "uuid": "73B83A72-E3FF-49EA-B670-F10792A9E3E2",
+  "major": 0,
+  "minor": 0,
+  "txPower": 0
+ }
+}
+{
+ "id": "76af47015460",
+ "address": "76:af:47:01:54:60",
+ "localName": null,
+ "txPowerLevel": null,
+ "rssi": -54,
+ "beaconType": "iBeacon",
+ "iBeacon": {
+  "uuid": "73B83A72-E3FF-49EA-B670-F10792A9E3E2",
+  "major": 0,
+  "minor": 0,
+  "txPower": 0
+ }
+}
+{
+ "id": "76af47015460",
+ "address": "76:af:47:01:54:60",
+ "localName": null,
+ "txPowerLevel": null,
+ "rssi": -55,
+ "beaconType": "iBeacon",
+ "iBeacon": {
+  "uuid": "73B83A72-E3FF-49EA-B670-F10792A9E3E2",
+  "major": 0,
+  "minor": 0,
+  "txPower": 0
+ }
+}
+{
+ "id": "76af47015460",
+ "address": "76:af:47:01:54:60",
+ "localName": null,
+ "txPowerLevel": null,
+ "rssi": -53,
+ "beaconType": "iBeacon",
+ "iBeacon": {
+  "uuid": "73B83A72-E3FF-49EA-B670-F10792A9E3E2",
+  "major": 0,
+  "minor": 0,
+  "txPower": 0
+ }
+}
+{
+ "id": "76af47015460",
+ "address": "76:af:47:01:54:60",
+ "localName": null,
+ "txPowerLevel": null,
+ "rssi": -53,
+ "beaconType": "iBeacon",
+ "iBeacon": {
+  "uuid": "73B83A72-E3FF-49EA-B670-F10792A9E3E2",
+  "major": 0,
+  "minor": 0,
+  "txPower": 0
+ }
+}
+{
+ "id": "76af47015460",
+ "address": "76:af:47:01:54:60",
+ "localName": null,
+ "txPowerLevel": null,
+ "rssi": -53,
+ "beaconType": "iBeacon",
+ "iBeacon": {
+  "uuid": "73B83A72-E3FF-49EA-B670-F10792A9E3E2",
+  "major": 0,
+  "minor": 0,
+  "txPower": 0
+ }
+}
+{
+ "id": "76af47015460",
+ "address": "76:af:47:01:54:60",
+ "localName": null,
+ "txPowerLevel": null,
+ "rssi": -53,
+ "beaconType": "iBeacon",
+ "iBeacon": {
+  "uuid": "73B83A72-E3FF-49EA-B670-F10792A9E3E2",
+  "major": 0,
+  "minor": 0,
+  "txPower": 0
+ }
+}
+{
+ "id": "76af47015460",
+ "address": "76:af:47:01:54:60",
+ "localName": null,
+ "txPowerLevel": null,
+ "rssi": -53,
+ "beaconType": "iBeacon",
+ "iBeacon": {
+  "uuid": "73B83A72-E3FF-49EA-B670-F10792A9E3E2",
+  "major": 0,
+  "minor": 0,
+  "txPower": 0
+ }
+}
+{
+ "id": "76af47015460",
+ "address": "76:af:47:01:54:60",
+ "localName": null,
+ "txPowerLevel": null,
+ "rssi": -58,
+ "beaconType": "iBeacon",
+ "iBeacon": {
+  "uuid": "73B83A72-E3FF-49EA-B670-F10792A9E3E2",
+  "major": 0,
+  "minor": 0,
+  "txPower": 0
+ }
+}
+{
+ "id": "76af47015460",
+ "address": "76:af:47:01:54:60",
+ "localName": null,
+ "txPowerLevel": null,
+ "rssi": -58,
+ "beaconType": "iBeacon",
+ "iBeacon": {
+  "uuid": "73B83A72-E3FF-49EA-B670-F10792A9E3E2",
+  "major": 0,
+  "minor": 0,
+  "txPower": 0
+ }
+}
+{
+ "id": "76af47015460",
+ "address": "76:af:47:01:54:60",
+ "localName": null,
+ "txPowerLevel": null,
+ "rssi": -58,
+ "beaconType": "iBeacon",
+ "iBeacon": {
+  "uuid": "73B83A72-E3FF-49EA-B670-F10792A9E3E2",
+  "major": 0,
+  "minor": 0,
+  "txPower": 0
+ }
+}
+{
+ "id": "76af47015460",
+ "address": "76:af:47:01:54:60",
+ "localName": null,
+ "txPowerLevel": null,
+ "rssi": -58,
+ "beaconType": "iBeacon",
+ "iBeacon": {
+  "uuid": "73B83A72-E3FF-49EA-B670-F10792A9E3E2",
+  "major": 0,
+  "minor": 0,
+  "txPower": 0
+ }
+}
+{
+ "id": "76af47015460",
+ "address": "76:af:47:01:54:60",
+ "localName": null,
+ "txPowerLevel": null,
+ "rssi": -58,
+ "beaconType": "iBeacon",
+ "iBeacon": {
+  "uuid": "73B83A72-E3FF-49EA-B670-F10792A9E3E2",
+  "major": 0,
+  "minor": 0,
+  "txPower": 0
+ }
+}
+{
+ "id": "76af47015460",
+ "address": "76:af:47:01:54:60",
+ "localName": null,
+ "txPowerLevel": null,
+ "rssi": -54,
+ "beaconType": "iBeacon",
+ "iBeacon": {
+  "uuid": "73B83A72-E3FF-49EA-B670-F10792A9E3E2",
+  "major": 0,
+  "minor": 0,
+  "txPower": 0
+ }
+}
+{
+ "id": "76af47015460",
+ "address": "76:af:47:01:54:60",
+ "localName": null,
+ "txPowerLevel": null,
+ "rssi": -54,
+ "beaconType": "iBeacon",
+ "iBeacon": {
+  "uuid": "73B83A72-E3FF-49EA-B670-F10792A9E3E2",
+  "major": 0,
+  "minor": 0,
+  "txPower": 0
+ }
+}
+{
+ "id": "76af47015460",
+ "address": "76:af:47:01:54:60",
+ "localName": null,
+ "txPowerLevel": null,
+ "rssi": -54,
+ "beaconType": "iBeacon",
+ "iBeacon": {
+  "uuid": "73B83A72-E3FF-49EA-B670-F10792A9E3E2",
+  "major": 0,
+  "minor": 0,
+  "txPower": 0
+ }
+}
+{
+ "id": "76af47015460",
+ "address": "76:af:47:01:54:60",
+ "localName": null,
+ "txPowerLevel": null,
+ "rssi": -54,
+ "beaconType": "iBeacon",
+ "iBeacon": {
+  "uuid": "73B83A72-E3FF-49EA-B670-F10792A9E3E2",
+  "major": 0,
+  "minor": 0,
+  "txPower": 0
+ }
+}
+{
+ "id": "76af47015460",
+ "address": "76:af:47:01:54:60",
+ "localName": null,
+ "txPowerLevel": null,
+ "rssi": -54,
+ "beaconType": "iBeacon",
+ "iBeacon": {
+  "uuid": "73B83A72-E3FF-49EA-B670-F10792A9E3E2",
+  "major": 0,
+  "minor": 0,
+  "txPower": 0
+ }
+}
+{
+ "id": "76af47015460",
+ "address": "76:af:47:01:54:60",
+ "localName": null,
+ "txPowerLevel": null,
+ "rssi": -54,
+ "beaconType": "iBeacon",
+ "iBeacon": {
+  "uuid": "73B83A72-E3FF-49EA-B670-F10792A9E3E2",
+  "major": 0,
+  "minor": 0,
+  "txPower": 0
+ }
+}
+{
+ "id": "76af47015460",
+ "address": "76:af:47:01:54:60",
+ "localName": null,
+ "txPowerLevel": null,
+ "rssi": -53,
+ "beaconType": "iBeacon",
+ "iBeacon": {
+  "uuid": "73B83A72-E3FF-49EA-B670-F10792A9E3E2",
+  "major": 0,
+  "minor": 0,
+  "txPower": 0
+ }
+}
+{
+ "id": "76af47015460",
+ "address": "76:af:47:01:54:60",
+ "localName": null,
+ "txPowerLevel": null,
+ "rssi": -53,
+ "beaconType": "iBeacon",
+ "iBeacon": {
+  "uuid": "73B83A72-E3FF-49EA-B670-F10792A9E3E2",
+  "major": 0,
+  "minor": 0,
+  "txPower": 0
+ }
+}
+{
+ "id": "76af47015460",
+ "address": "76:af:47:01:54:60",
+ "localName": null,
+ "txPowerLevel": null,
+ "rssi": -53,
+ "beaconType": "iBeacon",
+ "iBeacon": {
+  "uuid": "73B83A72-E3FF-49EA-B670-F10792A9E3E2",
+  "major": 0,
+  "minor": 0,
+  "txPower": 0
+ }
+}
+{
+ "id": "76af47015460",
+ "address": "76:af:47:01:54:60",
+ "localName": null,
+ "txPowerLevel": null,
+ "rssi": -53,
+ "beaconType": "iBeacon",
+ "iBeacon": {
+  "uuid": "73B83A72-E3FF-49EA-B670-F10792A9E3E2",
+  "major": 0,
+  "minor": 0,
+  "txPower": 0
+ }
+}
+{
+ "id": "76af47015460",
+ "address": "76:af:47:01:54:60",
+ "localName": null,
+ "txPowerLevel": null,
+ "rssi": -58,
+ "beaconType": "iBeacon",
+ "iBeacon": {
+  "uuid": "73B83A72-E3FF-49EA-B670-F10792A9E3E2",
+  "major": 0,
+  "minor": 0,
+  "txPower": 0
+ }
+}
+{
+ "id": "76af47015460",
+ "address": "76:af:47:01:54:60",
+ "localName": null,
+ "txPowerLevel": null,
+ "rssi": -58,
+ "beaconType": "iBeacon",
+ "iBeacon": {
+  "uuid": "73B83A72-E3FF-49EA-B670-F10792A9E3E2",
+  "major": 0,
+  "minor": 0,
+  "txPower": 0
+ }
+}
+{
+ "id": "76af47015460",
+ "address": "76:af:47:01:54:60",
+ "localName": null,
+ "txPowerLevel": null,
+ "rssi": -58,
+ "beaconType": "iBeacon",
+ "iBeacon": {
+  "uuid": "73B83A72-E3FF-49EA-B670-F10792A9E3E2",
+  "major": 0,
+  "minor": 0,
+  "txPower": 0
+ }
+}
+{
+ "id": "76af47015460",
+ "address": "76:af:47:01:54:60",
+ "localName": null,
+ "txPowerLevel": null,
+ "rssi": -54,
+ "beaconType": "iBeacon",
+ "iBeacon": {
+  "uuid": "73B83A72-E3FF-49EA-B670-F10792A9E3E2",
+  "major": 0,
+  "minor": 0,
+  "txPower": 0
+ }
+}
+{
+ "id": "76af47015460",
+ "address": "76:af:47:01:54:60",
+ "localName": null,
+ "txPowerLevel": null,
+ "rssi": -54,
+ "beaconType": "iBeacon",
+ "iBeacon": {
+  "uuid": "73B83A72-E3FF-49EA-B670-F10792A9E3E2",
+  "major": 0,
+  "minor": 0,
+  "txPower": 0
+ }
+}
+{
+ "id": "76af47015460",
+ "address": "76:af:47:01:54:60",
+ "localName": null,
+ "txPowerLevel": null,
+ "rssi": -54,
+ "beaconType": "iBeacon",
+ "iBeacon": {
+  "uuid": "73B83A72-E3FF-49EA-B670-F10792A9E3E2",
+  "major": 0,
+  "minor": 0,
+  "txPower": 0
+ }
+}
+{
+ "id": "76af47015460",
+ "address": "76:af:47:01:54:60",
+ "localName": null,
+ "txPowerLevel": null,
+ "rssi": -54,
+ "beaconType": "iBeacon",
+ "iBeacon": {
+  "uuid": "73B83A72-E3FF-49EA-B670-F10792A9E3E2",
+  "major": 0,
+  "minor": 0,
+  "txPower": 0
+ }
+}
+{
+ "id": "76af47015460",
+ "address": "76:af:47:01:54:60",
+ "localName": null,
+ "txPowerLevel": null,
+ "rssi": -53,
+ "beaconType": "iBeacon",
+ "iBeacon": {
+  "uuid": "73B83A72-E3FF-49EA-B670-F10792A9E3E2",
+  "major": 0,
+  "minor": 0,
+  "txPower": 0
+ }
+}
+{
+ "id": "76af47015460",
+ "address": "76:af:47:01:54:60",
+ "localName": null,
+ "txPowerLevel": null,
+ "rssi": -53,
+ "beaconType": "iBeacon",
+ "iBeacon": {
+  "uuid": "73B83A72-E3FF-49EA-B670-F10792A9E3E2",
+  "major": 0,
+  "minor": 0,
+  "txPower": 0
+ }
+}
+{
+ "id": "76af47015460",
+ "address": "76:af:47:01:54:60",
+ "localName": null,
+ "txPowerLevel": null,
+ "rssi": -53,
+ "beaconType": "iBeacon",
+ "iBeacon": {
+  "uuid": "73B83A72-E3FF-49EA-B670-F10792A9E3E2",
+  "major": 0,
+  "minor": 0,
+  "txPower": 0
+ }
+}
+{
+ "id": "76af47015460",
+ "address": "76:af:47:01:54:60",
+ "localName": null,
+ "txPowerLevel": null,
+ "rssi": -53,
+ "beaconType": "iBeacon",
+ "iBeacon": {
+  "uuid": "73B83A72-E3FF-49EA-B670-F10792A9E3E2",
+  "major": 0,
+  "minor": 0,
+  "txPower": 0
+ }
+}
+{
+ "id": "76af47015460",
+ "address": "76:af:47:01:54:60",
+ "localName": null,
+ "txPowerLevel": null,
+ "rssi": -53,
+ "beaconType": "iBeacon",
+ "iBeacon": {
+  "uuid": "73B83A72-E3FF-49EA-B670-F10792A9E3E2",
+  "major": 0,
+  "minor": 0,
+  "txPower": 0
+ }
+}
+{
+ "id": "76af47015460",
+ "address": "76:af:47:01:54:60",
+ "localName": null,
+ "txPowerLevel": null,
+ "rssi": -53,
+ "beaconType": "iBeacon",
+ "iBeacon": {
+  "uuid": "73B83A72-E3FF-49EA-B670-F10792A9E3E2",
+  "major": 0,
+  "minor": 0,
+  "txPower": 0
+ }
+}
+{
+ "id": "76af47015460",
+ "address": "76:af:47:01:54:60",
+ "localName": null,
+ "txPowerLevel": null,
+ "rssi": -53,
+ "beaconType": "iBeacon",
+ "iBeacon": {
+  "uuid": "73B83A72-E3FF-49EA-B670-F10792A9E3E2",
+  "major": 0,
+  "minor": 0,
+  "txPower": 0
+ }
+}
+{
+ "id": "76af47015460",
+ "address": "76:af:47:01:54:60",
+ "localName": null,
+ "txPowerLevel": null,
+ "rssi": -53,
+ "beaconType": "iBeacon",
+ "iBeacon": {
+  "uuid": "73B83A72-E3FF-49EA-B670-F10792A9E3E2",
+  "major": 0,
+  "minor": 0,
+  "txPower": 0
+ }
+}
+{
+ "id": "76af47015460",
+ "address": "76:af:47:01:54:60",
+ "localName": null,
+ "txPowerLevel": null,
+ "rssi": -53,
+ "beaconType": "iBeacon",
+ "iBeacon": {
+  "uuid": "73B83A72-E3FF-49EA-B670-F10792A9E3E2",
+  "major": 0,
+  "minor": 0,
+  "txPower": 0
+ }
+}
+{
+ "id": "76af47015460",
+ "address": "76:af:47:01:54:60",
+ "localName": null,
+ "txPowerLevel": null,
+ "rssi": -58,
+ "beaconType": "iBeacon",
+ "iBeacon": {
+  "uuid": "73B83A72-E3FF-49EA-B670-F10792A9E3E2",
+  "major": 0,
+  "minor": 0,
+  "txPower": 0
+ }
+}
+{
+ "id": "76af47015460",
+ "address": "76:af:47:01:54:60",
+ "localName": null,
+ "txPowerLevel": null,
+ "rssi": -58,
+ "beaconType": "iBeacon",
+ "iBeacon": {
+  "uuid": "73B83A72-E3FF-49EA-B670-F10792A9E3E2",
+  "major": 0,
+  "minor": 0,
+  "txPower": 0
+ }
+}
+{
+ "id": "76af47015460",
+ "address": "76:af:47:01:54:60",
+ "localName": null,
+ "txPowerLevel": null,
+ "rssi": -58,
+ "beaconType": "iBeacon",
+ "iBeacon": {
+  "uuid": "73B83A72-E3FF-49EA-B670-F10792A9E3E2",
+  "major": 0,
+  "minor": 0,
+  "txPower": 0
+ }
+}
+{
+ "id": "76af47015460",
+ "address": "76:af:47:01:54:60",
+ "localName": null,
+ "txPowerLevel": null,
+ "rssi": -58,
+ "beaconType": "iBeacon",
+ "iBeacon": {
+  "uuid": "73B83A72-E3FF-49EA-B670-F10792A9E3E2",
+  "major": 0,
+  "minor": 0,
+  "txPower": 0
+ }
+}
+{
+ "id": "76af47015460",
+ "address": "76:af:47:01:54:60",
+ "localName": null,
+ "txPowerLevel": null,
+ "rssi": -54,
+ "beaconType": "iBeacon",
+ "iBeacon": {
+  "uuid": "73B83A72-E3FF-49EA-B670-F10792A9E3E2",
+  "major": 0,
+  "minor": 0,
+  "txPower": 0
+ }
+}
+{
+ "id": "76af47015460",
+ "address": "76:af:47:01:54:60",
+ "localName": null,
+ "txPowerLevel": null,
+ "rssi": -54,
+ "beaconType": "iBeacon",
+ "iBeacon": {
+  "uuid": "73B83A72-E3FF-49EA-B670-F10792A9E3E2",
+  "major": 0,
+  "minor": 0,
+  "txPower": 0
+ }
+}
+{
+ "id": "76af47015460",
+ "address": "76:af:47:01:54:60",
+ "localName": null,
+ "txPowerLevel": null,
+ "rssi": -53,
+ "beaconType": "iBeacon",
+ "iBeacon": {
+  "uuid": "73B83A72-E3FF-49EA-B670-F10792A9E3E2",
+  "major": 0,
+  "minor": 0,
+  "txPower": 0
+ }
+}
+51
+{
+ "id": "76af47015460",
+ "address": "76:af:47:01:54:60",
+ "localName": null,
+ "txPowerLevel": null,
+ "rssi": -52,
+ "beaconType": "iBeacon",
+ "iBeacon": {
+  "uuid": "73B83A72-E3FF-49EA-B670-F10792A9E3E2",
+  "major": 0,
+  "minor": 0,
+  "txPower": 0
+ }
+}
+{
+ "id": "76af47015460",
+ "address": "76:af:47:01:54:60",
+ "localName": null,
+ "txPowerLevel": null,
+ "rssi": -53,
+ "beaconType": "iBeacon",
+ "iBeacon": {
+  "uuid": "73B83A72-E3FF-49EA-B670-F10792A9E3E2",
+  "major": 0,
+  "minor": 0,
+  "txPower": 0
+ }
+}
+{
+ "id": "76af47015460",
+ "address": "76:af:47:01:54:60",
+ "localName": null,
+ "txPowerLevel": null,
+ "rssi": -53,
+ "beaconType": "iBeacon",
+ "iBeacon": {
+  "uuid": "73B83A72-E3FF-49EA-B670-F10792A9E3E2",
+  "major": 0,
+  "minor": 0,
+  "txPower": 0
+ }
+}
