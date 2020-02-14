@@ -25,8 +25,15 @@ let interval = setInterval(collectRSSIs, scanInterval * 1000);
 //		- average rssi's for each beacon
 //		- empty advertisements[]
 function collectRSSIs() {
-	uniq_beacons = _.uniq(advertisements.map(ad => ad['iBeacon']['uuid']));
-	console.log(uniq_beacons);
+	uniq_beacons = [];
+	advertisements.forEach(ad => {
+		if (!(uniq_beacons.includes(ad[iBeacon][uuid]))) {
+			uniq_beacons.push(ad)
+			console.log(ad)
+		}
+	});
+	
+	//console.log(uniq_beacons.toString());
 };
 
 
