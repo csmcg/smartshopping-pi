@@ -4,6 +4,8 @@
   "description": "client to ee499 smartshopping",
   "main": "scan.js",
   "dependencies": {
+    "@abandonware/bluetooth-hci-socket": "^0.5.3-4",
+    "@abandonware/noble": "^1.9.2-5",
     "lodash": "^4.17.15",
     "node-beacon-scanner": "^0.2.2"
   },

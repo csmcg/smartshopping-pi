@@ -4,38 +4,73 @@ const noble = require('@abandonware/noble');
 const http = require('http');
 const scanner = new BeaconScanner({'noble': noble});
 
+const serverHostname = '10.42.0.1';
+const serverPort = 80;
+const postPath = '/'
+
 let advertisements = []; // beacons
-
 const scanInterval = 2; // seconds
-
-const collectBeacon = (ad) => {
-};
 
 // received an advertisement packet
 scanner.onadvertisement = ad => {
-	//console.log(JSON.stringify(ad, null, ' ')); // log to console
 	advertisements.push(ad); // add to advertisements collection
 };
 
 let interval = setInterval(collectRSSIs, scanInterval * 1000);
 
-// called every interval:
-//		- separate out unique beacons
-//		- for each unique beacon, get all rssi's received
-//		- average rssi's for each beacon
-//		- empty advertisements[]
 function collectRSSIs() {
 	uniq_beacons = [];
 	advertisements.forEach(ad => {
-		if (!(uniq_beacons.includes(ad[iBeacon][uuid]))) {
-			uniq_beacons.push(ad)
-			console.log(ad)
+		uuid = ad['iBeacon']['uuid'];
+		if (!(uniq_beacons.includes(uuid))) {
+			uniq_beacons.push(uuid)
 		}
 	});
 	
-	//console.log(uniq_beacons.toString());
+	// Get Moving Average filter
+	// for each uniuqe uuid, get all the rssi's for advertisements
+	// with that uuid, sum them
+	//beacons_read = [];	
+	beacons_read = {}
+	uniq_beacons.forEach(uuid => {
+		beacons_read[uuid] = null; 
+		rssi_total = 0;
+		rssi_cnt = 0;
+		advertisements.forEach(ad => {
+			if (ad['iBeacon']['uuid'] == uuid) {
+				rssi_total += ad['rssi'];
+				rssi_cnt += 1;
+			}
+		});
+		rssi_moving_average = _.round(rssi_total / rssi_cnt, 2);
+		beacons_read[uuid] = rssi_moving_average;
+		//beacons_read.push(beacon);
+	});
+	console.log(JSON.stringify(beacons_read));
+	// post the interval's mvg average
+	post_rssis(beacons_read);
+
+	advertisements = [];
 };
 
+function post_rssis(readings) {
+	let options = {
+		hostname:	serverHostname,
+		port:		serverPort,
+		path:		postPath,
+		method:		'POST',
+		headers:	{
+			'Content-Type':		'application/json'//,
+			//'Content-Length':	readings.length 
+		}
+	};
+	const req = http.request(options, (res) => {
+		console.log(`Response Status Code: ${res.statusCode}`);
+		req.write(readings);
+		req.end();
+	});
+	
+};
 
 // start scanning for iBeacon advertisements
 scanner.startScan().then(() => {
