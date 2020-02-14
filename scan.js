@@ -9,7 +9,6 @@ let advertisements = []; // beacons
 const scanInterval = 2; // seconds
 
 const collectBeacon = (ad) => {
-
 };
 
 // received an advertisement packet
@@ -27,8 +26,8 @@ let interval = setInterval(collectRSSIs, scanInterval * 1000);
 //		- empty advertisements[]
 function collectRSSIs() {
 	// shoud return list of UUIDs
-	uniq_beacons = _.find(_.countBy(advertisements, (advertisements) => {return advertisements.iBeacon.UUID})); 
-	console.log(JSON.stringify(uniq_beacons));
+	uniq_beacons = _.groupBy(advertisements, (ad) => {ad.iBeacon.uuid
+	console.log(uniq_beacons);
 	beacons = _.filter(advertisements, () => {
 	});
 };
