@@ -4,8 +4,8 @@ const noble = require('@abandonware/noble');
 const http = require('http');
 const scanner = new BeaconScanner({'noble': noble});
 
-const serverHostname = '10.42.0.1';
-const serverPort = 80;
+const serverHostname = '192.168.1.120';
+const serverPort = 3000;
 const postPath = '/'
 
 let advertisements = []; // beacons
