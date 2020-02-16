@@ -8,6 +8,9 @@ const serverHostname = '192.168.1.120';
 const serverPort = 3000;
 const postPath = '/'
 
+// beacon parameters
+const MAJOR_ID = 999;
+
 let advertisements = []; // beacons
 const scanInterval = 2; // seconds
 
@@ -21,34 +24,33 @@ let interval = setInterval(collectRSSIs, scanInterval * 1000);
 function collectRSSIs() {
 	uniq_beacons = [];
 	advertisements.forEach(ad => {
-		uuid = ad['iBeacon']['uuid'];
-		if (!(uniq_beacons.includes(uuid))) {
-			uniq_beacons.push(uuid)
+		minor_id = ad['iBeacon']['minor'];
+		if (!(uniq_beacons.includes(minor_id))) {
+			uniq_beacons.push(minor_id)
 		}
 	});
 	
 	// Get Moving Average filter
-	// for each uniuqe uuid, get all the rssi's for advertisements
-	// with that uuid, sum them
-	//beacons_read = [];	
-	beacons_read = {}
-	uniq_beacons.forEach(uuid => {
-		beacons_read[uuid] = null; 
+	// for each uniuqe minor id, get all the rssi's for advertisements
+	// with that minor id, sum them
+	beacons_read = {} // JSON object, where each key is a minor id, and value is that beacon's 
+					  // moving average rssi for the scanning interval
+	uniq_beacons.forEach(minor => {
+		beacons_read[minor] = null; 
 		rssi_total = 0;
 		rssi_cnt = 0;
 		advertisements.forEach(ad => {
-			if (ad['iBeacon']['uuid'] == uuid) {
+			if (ad['iBeacon']['minor'] == minor) {
 				rssi_total += ad['rssi'];
 				rssi_cnt += 1;
 			}
 		});
 		rssi_moving_average = _.round(rssi_total / rssi_cnt, 2);
-		beacons_read[uuid] = rssi_moving_average;
-		//beacons_read.push(beacon);
+		beacons_read[minor] = rssi_moving_average;
 	});
 	console.log(JSON.stringify(beacons_read));
 	// post the interval's mvg average
-	post_rssis(beacons_read);
+	//post_rssis(beacons_read);
 
 	advertisements = [];
 };
