@@ -16,7 +16,14 @@ const scanInterval = 2; // seconds
 
 // received an advertisement packet
 scanner.onadvertisement = ad => {
-	advertisements.push(ad); // add to advertisements collection
+	if (ad['iBeacon']['minor'] == 1 ||
+		ad['iBeacon']['minor'] == 2 ||
+		ad['iBeacon']['minor'] == 3 ||
+		ad['iBeacon']['minor'] == 4)
+		{
+		advertisements.push(ad); // add to advertisements collection
+		//console.log(ad);
+	}
 };
 
 let interval = setInterval(collectRSSIs, scanInterval * 1000);
@@ -50,7 +57,7 @@ function collectRSSIs() {
 	});
 	console.log(JSON.stringify(beacons_read));
 	// post the interval's mvg average
-	post_rssis(beacons_read);
+	//post_rssis(beacons_read);
 
 	advertisements = [];
 };
