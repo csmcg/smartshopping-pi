@@ -4,7 +4,7 @@ const noble = require('@abandonware/noble');
 const http = require('http');
 const scanner = new BeaconScanner({'noble': noble});
 
-const serverHost = '172.24.148.129';
+const serverHost = '10.42.0.1';
 const serverPort = 3000;
 const postPath = '/'
 
@@ -36,6 +36,7 @@ function collectRSSIs() {
 	beacons_read = {} // JSON object, where each key is a minor id, and value is that beacon's 
 					  // moving average rssi for the scanning interval
 	uniq_beacons.forEach(minor => {
+
 		beacons_read[minor] = null; 
 		rssi_total = 0;
 		rssi_cnt = 0;
@@ -68,10 +69,9 @@ function post_rssis(readings) {
 	};
 	const req = http.request(options, (res) => {
 		console.log(`Response Status Code: ${res.statusCode}`);
-		req.write(readings);
-		req.end();
 	});
-	
+	req.write(JSON.stringify(readings));
+	req.end();
 };
 
 // start scanning for iBeacon advertisements
