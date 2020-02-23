@@ -1,0 +1,1 @@
+This is from testing on Sunday 2/23/20, testing Beacon with minorid == 1, at TxPower +0 dBm
