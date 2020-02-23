@@ -3,8 +3,9 @@ const BeaconScanner = require('node-beacon-scanner');
 const noble = require('@abandonware/noble');
 const http = require('http');
 const scanner = new BeaconScanner({'noble': noble});
+//const kFilter = require('kalmanjs');
 
-const serverHost = '172.24.148.129';
+const serverHost = '10.42.0.1';
 const serverPort = 3000;
 const postPath = '/'
 
@@ -16,19 +17,15 @@ const scanInterval = 2; // seconds
 
 // received an advertisement packet
 scanner.onadvertisement = ad => {
-	if (ad['iBeacon']['minor'] == 1 ||
-		ad['iBeacon']['minor'] == 2 ||
-		ad['iBeacon']['minor'] == 3 ||
-		ad['iBeacon']['minor'] == 4)
-		{
-		advertisements.push(ad); // add to advertisements collection
-		//console.log(ad);
+	if (ad['iBeacon']['minor'] == 1) {
+ 	//advertisements.push(ad); // add to advertisements collection
+		console.log(ad['rssi']);
 	}
 };
 
-let interval = setInterval(collectRSSIs, scanInterval * 1000);
+//let interval = setInterval(collectRSSIs, scanInterval * 1000);
 
-function collectRSSIs() {
+/*function collectRSSIs() {
 	uniq_beacons = [];
 	advertisements.forEach(ad => {
 		minor_id = ad['iBeacon']['minor'];
@@ -52,7 +49,7 @@ function collectRSSIs() {
 				rssi_cnt += 1;
 			}
 		});
-		rssi_moving_average = _.round(rssi_total / rssi_cnt, 2);
+		rssi_moving_average = _.round(rssi_total / rssi_cnt);
 		beacons_read[minor] = rssi_moving_average;
 	});
 	console.log(JSON.stringify(beacons_read));
@@ -60,7 +57,7 @@ function collectRSSIs() {
 	//post_rssis(beacons_read);
 
 	advertisements = [];
-};
+};*/
 
 function post_rssis(readings) {
 	let options = {
@@ -75,15 +72,15 @@ function post_rssis(readings) {
 	};
 	const req = http.request(options, (res) => {
 		console.log(`Response Status Code: ${res.statusCode}`);
-		req.write(readings);
-		req.end();
 	});
-	
+	req.write(readings);
+	req.end();
+
 };
 
 // start scanning for iBeacon advertisements
 scanner.startScan().then(() => {
-	console.log('Started scan');
+	//console.log('Started scan');
 }).catch(error => {
 	console.log(error);
 });
