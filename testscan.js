@@ -17,7 +17,7 @@ const scanInterval = 2; // seconds
 
 // received an advertisement packet
 scanner.onadvertisement = ad => {
-	if (ad['iBeacon']['minor'] == 1) {
+	if (ad['iBeacon']['minor'] == 6) {
  	//advertisements.push(ad); // add to advertisements collection
 		console.log(ad['rssi']);
 	}
