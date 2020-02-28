@@ -10,13 +10,18 @@ const postPath = '/'
 
 // beacon parameters
 const MAJOR_ID = 999;
-
 let advertisements = []; // beacons
 const scanInterval = 2; // seconds
 
-// received an advertisement packet
 scanner.onadvertisement = ad => {
-	advertisements.push(ad); // add to advertisements collection
+	if (ad['iBeacon']['minor'] == 1 ||
+		ad['iBeacon']['minor'] == 2 ||
+		ad['iBeacon']['minor'] == 3 ||
+		ad['iBeacon']['minor'] == 4 ||
+		ad['iBeacon']['minor'] == 5 ||
+		ad['iBeacon']['minor'] == 6)  {
+			advertisements.push(ad); // add to advertisements collection
+	}
 };
 
 let interval = setInterval(collectRSSIs, scanInterval * 1000);
@@ -33,11 +38,12 @@ function collectRSSIs() {
 	// Get Moving Average filter
 	// for each uniuqe minor id, get all the rssi's for advertisements
 	// with that minor id, sum them
-	beacons_read = {} // JSON object, where each key is a minor id, and value is that beacon's 
-					  // moving average rssi for the scanning interval
+	beacons_read = [] // array, where each entry is a JSON object: minor: x, rssi: y
+	// moving average rssi for the scanning interval
 	uniq_beacons.forEach(minor => {
 
-		beacons_read[minor] = null; 
+		//beacons_read[minor] = null;
+		let obj = {};
 		rssi_total = 0;
 		rssi_cnt = 0;
 		advertisements.forEach(ad => {
@@ -47,8 +53,11 @@ function collectRSSIs() {
 			}
 		});
 		rssi_moving_average = _.round(rssi_total / rssi_cnt, 2);
-		beacons_read[minor] = rssi_moving_average;
+		obj['minor'] = minor;
+		obj['rssi'] = rssi_moving_average;
+		beacons_read.push(obj);
 	});
+	beacons_read = _.sortBy(beacons_read, ['rssi']);
 	console.log(JSON.stringify(beacons_read));
 	// post the interval's mvg average
 	post_rssis(beacons_read);
@@ -65,7 +74,8 @@ function post_rssis(readings) {
 		headers:	{
 			'Content-Type':		'application/json'//,
 			//'Content-Length':	readings.length 
-		}
+		},
+		keepAlive:	true
 	};
 	const req = http.request(options, (res) => {
 		console.log(`Response Status Code: ${res.statusCode}`);
