@@ -3,10 +3,11 @@ const BeaconScanner = require('node-beacon-scanner');
 const noble = require('@abandonware/noble');
 const http = require('http');
 const scanner = new BeaconScanner({'noble': noble});
+const netinfo = require('./netinfo.js');
 
-const serverHost = '10.42.0.1';
-const serverPort = 3000;
-const postPath = '/'
+const serverHost = netinfo.serverIP;
+const serverPort = netinfo.port;
+const postPath = '/';
 
 // beacon parameters
 const MAJOR_ID = 999;
@@ -14,14 +15,7 @@ let advertisements = []; // beacons
 const scanInterval = 2; // seconds
 
 scanner.onadvertisement = ad => {
-	if (ad['iBeacon']['minor'] == 1 ||
-		ad['iBeacon']['minor'] == 2 ||
-		ad['iBeacon']['minor'] == 3 ||
-		ad['iBeacon']['minor'] == 4 ||
-		ad['iBeacon']['minor'] == 5 ||
-		ad['iBeacon']['minor'] == 6)  {
-			advertisements.push(ad); // add to advertisements collection
-	}
+	advertisements.push(ad); // add to advertisements collection
 };
 
 let interval = setInterval(collectRSSIs, scanInterval * 1000);
