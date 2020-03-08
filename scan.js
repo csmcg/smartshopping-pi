@@ -74,6 +74,7 @@ function post_rssis(readings) {
 	const req = http.request(options, (res) => {
 		console.log(`Response Status Code: ${res.statusCode}`);
 	});
+	req.on('error', () => {console.log('cant connect to server')});
 	req.write(JSON.stringify(readings));
 	req.end();
 };
