@@ -7,7 +7,7 @@
     "@abandonware/bluetooth-hci-socket": "^0.5.3-4",
     "@abandonware/noble": "^1.9.2-5",
     "kalmanjs": "^1.1.0",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.21",
     "node-beacon-scanner": "^0.2.2"
   },
   "devDependencies": {},
